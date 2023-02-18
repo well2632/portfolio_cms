@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_projeto_homes",
+  "info": {
+    "displayName": "Projetos Home",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "projeto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::projeto.projeto"
+    },
+    "lado": {
+      "type": "enumeration",
+      "enum": [
+        "direita",
+        "esquerda"
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_descricao": {
+      "type": "string"
+    },
+    "curriculo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sobre": {
+      "type": "text"
+    },
+    "avaliacaos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::avaliacao.avaliacao"
+    },
+    "projetos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.projeto-home"
+    },
+    "hero_palavras_titulo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.hero-palavras"
+    },
+    "hero_prefixo_titulo": {
+      "type": "text"
+    }
+  }
+}

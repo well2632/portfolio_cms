@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_hero_palavras",
+  "info": {
+    "displayName": "Hero palavras"
+  },
+  "options": {},
+  "attributes": {
+    "palavra": {
+      "type": "string"
+    }
+  }
+}
