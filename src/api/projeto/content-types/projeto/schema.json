@@ -18,12 +18,9 @@
     "thumb": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "texto_resumido": {
@@ -36,6 +33,19 @@
       "type": "uid",
       "targetField": "titulo",
       "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "first_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
