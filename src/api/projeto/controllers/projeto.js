@@ -12,9 +12,10 @@ module.exports = createCoreController("api::projeto.projeto", ({ strapi }) => ({
 
     const entity = await strapi.db.query("api::projeto.projeto").findOne({
       where: { slug },
+      populate: true,
     });
 
-    const sanitizedEntity = await this.sanitizeOutput(entity);
+    const sanitizedEntity = await this.sanitizeOutput(entity, ctx.query);
 
     return this.transformResponse(sanitizedEntity);
   },
