@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo install packages...
-      - npm install
+      - npm install --unsafe-perm
   build:
     commands:
       - echo Create build...
