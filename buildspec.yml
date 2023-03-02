@@ -4,7 +4,8 @@ phases:
   pre_build:
     commands:
       - echo install packages...
-      - npm install --unsafe-perm
+      - npm install -g aws-cdk
+      - cdk synth
   build:
     commands:
       - echo Create build...
