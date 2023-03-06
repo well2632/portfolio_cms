@@ -11,12 +11,16 @@ module.exports = [
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
-        useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:"],
-          "media-src": ["'self'", "data:", "blob:"],
-          upgradeInsecureRequests: null,
+          "script-src": ["'self'", "'unsafe-inline'", "cdn.jsdelivr.net"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "cdn.jsdelivr.net",
+            "strapi.io",
+            "dl.airtable.com",
+            "https://king-prawn-app-2mah9.ondigitalocean.app/",
+          ],
         },
       },
     },
