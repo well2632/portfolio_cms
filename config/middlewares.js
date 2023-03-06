@@ -7,6 +7,7 @@ module.exports = [
   "strapi::body",
   "strapi::favicon",
   "strapi::public",
+  "strapi::security",
   // {
   //   name: "strapi::security",
   //   config: {
